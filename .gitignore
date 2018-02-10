@@ -1,8 +1,14 @@
-*.egg-info
-*.pot
+# Known stuff
+*.sqlite3
 *.py[co]
-.tox/
 __pycache__
+migrations/
+
+
+# Random shit
+*.pot
+*.egg-info
+.tox/
 MANIFEST
 dist/
 docs/_build/
@@ -22,3 +28,4 @@ parts
 src/*.egg-info
 lib
 lib64
+
