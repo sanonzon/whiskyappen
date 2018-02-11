@@ -1,0 +1,7 @@
+{% if createWhiskyForm %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ createWhiskyForm.as_ul }}
+    <input type="submit" value="Submit" />
+</form>
+{% endif %}

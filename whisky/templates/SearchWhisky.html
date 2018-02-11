@@ -1,0 +1,23 @@
+{% if form %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+{% endif %}
+{% if result %}
+<table> 
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Malt</th>
+    </tr>
+    {% for whisky in result %}
+        <tr>
+            <td>{{whisky.name}}</td>
+            <td>{{whisky.age}}</td>
+            <td>{{whisky.malt}}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endif %}
